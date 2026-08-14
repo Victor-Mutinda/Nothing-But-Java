@@ -19,6 +19,14 @@ public class Main {
         pay3.paymentInfo("Bossie","bossie@gmail.com","0712345678");
 
 
-
+        // PaymentProcessor demonstrates loose coupling
+        PaymentProcessor mpesaProcessor = new PaymentProcessor(new Mpesa("0721247005"));
+        mpesaProcessor.processPayment(1500);
+        PaymentProcessor cardProcessor = new PaymentProcessor(new BankCard("1230-2025"));
+        cardProcessor.processPayment(10000); 
+        // Reason why PaymentProcessor works with all 3 payment methods is because;
+        // PaymentProcessor depends on the Payment abstraction rather than a specific payment method/implementation
+        // Since Payment methods(mpesa,...) are extended from the Payment class, they can be passed to the PaymentProcessor through Payment reference
+        // therefore PaymentProcessor works with different Payment methods without changing code.
     }
 }
