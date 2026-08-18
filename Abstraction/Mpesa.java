@@ -8,6 +8,7 @@ public class Mpesa extends Payment {
         this.phoneNumber = phoneNumber;
     }
 
+    @Override
     void pay(int amount){
         System.out.println("A prompt to pay " + amount + " via mpesa has been sent to " + phoneNumber);
     }

@@ -25,7 +25,7 @@ public class Manager extends Employee{
 
         double totalBonus = initialBonus + extraHours ;
 
-        System.out.println("The total Bonuses for this Month for " + this.name + " are : " + totalBonus);
+        System.out.println("The total Bonuses for this Month for " + name + " are : " + totalBonus);
         
         return totalBonus;
 

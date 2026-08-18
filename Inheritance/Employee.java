@@ -16,7 +16,7 @@ public class Employee {
     }
 
     public double calculateBonus(){
-        double bonus = 0.1 * this.salary ;
+        double bonus = 0.1 * salary ;
         return bonus;
 
     }
