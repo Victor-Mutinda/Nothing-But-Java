@@ -17,4 +17,18 @@ public class Manager extends Employee{
         System.out.println(name + " is a manager. He has a team of " + teamSize); // the new overriden method.
     }
 
+      @Override
+    public double calculateBonus(){
+        double initialBonus = super.calculateBonus();
+
+        double extraHours = 0.3 * this.salary;
+
+        double totalBonus = initialBonus + extraHours ;
+
+        System.out.println("The total Bonuses for this Month for " + this.name + " are : " + totalBonus);
+        
+        return totalBonus;
+
+    }
+
 }

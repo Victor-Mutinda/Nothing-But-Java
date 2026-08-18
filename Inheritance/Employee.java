@@ -14,5 +14,11 @@ public class Employee {
     public void displayInfo(){
         System.out.println("---Employee Details--- \n" + name + " earns :: " + salary);
     }
+
+    public double calculateBonus(){
+        double bonus = 0.1 * this.salary ;
+        return bonus;
+
+    }
     
 }

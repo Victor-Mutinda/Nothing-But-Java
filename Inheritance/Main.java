@@ -20,9 +20,11 @@ public class Main {
         // The actual object type determines which overriden methods execute at runtime. 
         // Hence the name runtime polymorphism or dynamic-method dispatch
         director.displayInfo();
+        director.calculateBonus();
 
         Employee softwareDev = new Developer(4,"Lola",80000,"Python");
         softwareDev.displayInfo();
+        softwareDev.calculateBonus();
 
         
     }

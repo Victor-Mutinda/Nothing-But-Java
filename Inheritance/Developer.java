@@ -14,5 +14,19 @@ public class Developer extends Employee {
         super.displayInfo();
         System.out.println("The programming language " + name + " uses is " + programmingLanguage);
     }
+
+    @Override
+    public double calculateBonus(){
+        double initialBonus = super.calculateBonus();
+
+        double extraHours = 0.2 * this.salary;
+
+        double totalBonus = initialBonus + extraHours ;
+
+        System.out.println("The total Bonuses for this Month for " + this.name + " are : " + totalBonus);
+        
+        return totalBonus;
+
+    }
     
 }
