@@ -24,7 +24,11 @@ public class Employee {
     }
     // Setters
     public void setId(int id){
-        this.id =  id ;
+        if(id < 0){
+            System.out.println("Employee ID can't be less than 0. TRY AGAIN!!");
+        } else {
+            this.id =  id ;
+        }   
     }
 
     public void setName(String name){
@@ -53,6 +57,12 @@ public class Employee {
         else{
             this.department = department;
         }
+    }
+
+    public void displayInfo(){
+        System.out.println("---Employee Details---" + "\nEmployee ID : " + id +
+        "\nEmployee Name : " + name + "\nSalary : " + salary + "\nAssigned Department : " + department );
+    
     }
 
 }

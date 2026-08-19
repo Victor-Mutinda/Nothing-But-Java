@@ -12,6 +12,7 @@ public class Main {
         System.out.println("---Employee Details---");
         System.out.println(employee1.getName() +"\n" + employee1.getSalary() + "\n" + employee1.getDepartment() );
 
+        employee1.displayInfo();
     }
     
 }
