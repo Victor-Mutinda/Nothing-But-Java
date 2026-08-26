@@ -1,7 +1,7 @@
 package BankAccountSystem ;
 
 public class BankAccount {
-    
+    // Encapsulation
     private int accountNo;
     private String accountName;
     private double accountBalance;
@@ -37,12 +37,13 @@ public class BankAccount {
     public double getAccountBalance(){
         return accountBalance;
     }
+
     //public void setAccountBalance(double accountBalance){
      //   this.accountBalance =  accountBalance ;
     //}
+
     // public setter exposes privaate accountBalance attribute to other external classes.
     //Therefore using a protected method to control access to that private attribute to  the child classs and the classes in the same package
- 
     protected void updateAccountBalance(double accountBal){
         this.accountBalance = accountBal;
     }
