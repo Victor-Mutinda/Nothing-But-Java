@@ -6,5 +6,3 @@ public class EmailService implements Message {
         System.out.println(message + " [MESSAGE WILL BE SENT VIA EMAIL]");
     }
 }
-
-
