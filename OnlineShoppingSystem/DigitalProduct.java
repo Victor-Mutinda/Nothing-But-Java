@@ -21,7 +21,7 @@ public class DigitalProduct extends Product{
 
     @Override
     public void calculatePrice(int quantity){
-        totalCost = (super.getPrice() - (super.getPrice() * discount)) * quantity ;
+        totalCost = (super.getPrice() - appyDiscount(discount)) * quantity ;
         System.out.println("The Discount applied is : " + (super.getPrice() * discount * quantity));
 
         System.out.println("The total cost will be : " + totalCost);

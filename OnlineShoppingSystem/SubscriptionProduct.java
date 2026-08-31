@@ -17,8 +17,9 @@ public class SubscriptionProduct extends Product {
         System.out.println("The Subscription duration (in months) of " + super.getProductName() + " is: " + durationOfSubscription);    
     }
 
-    public void calculatePrice(){
-        totalCost = (super.getPrice() - (super.getPrice() * discount)) * durationOfSubscription ;
+    @Override
+    public void calculatePrice(int durationOfSubscription){
+        totalCost = (super.getPrice() - appyDiscount(discount)) * durationOfSubscription ;
         System.out.println("The Discount applied is : " + (super.getPrice() * discount * durationOfSubscription));
 
         System.out.println("The total cost will be : " + totalCost);

@@ -3,6 +3,8 @@ package OnlineShoppingSystem;
 public class Main {
     public static void main(String[] args){
 
+
+// Parent-class references pointing to child-class objects.
         Product Television = new PhysicalProduct(1, "Samsung TV", 90000, 2000);
         Television.displayInfo();
         Television.calculatePrice(3);
@@ -11,10 +13,9 @@ public class Main {
         eBook.displayInfo();
         eBook.calculatePrice(2);
 
-        SubscriptionProduct spotifyPremium = new SubscriptionProduct(3, "Spotify Music", 201, 12);
+        Product spotifyPremium = new SubscriptionProduct(3, "Spotify Music", 201, 12);
         spotifyPremium.displayInfo();
-        spotifyPremium.calculatePrice();
-
+        spotifyPremium.calculatePrice(12);
 
     }
 }
