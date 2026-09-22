@@ -2,6 +2,9 @@ package Collections;
 
 import java.util.ArrayList;
 
+// An ArrayList is a resizable array. Its size can grow or shrink dynamically unlike a normal array,
+// It can allow duplicates. Elements are stored in the order the were inserted.
+
 public class ArayList {
     public static void main(String[] args){
 // Creating an Array List
@@ -36,6 +39,14 @@ public class ArayList {
         pets.set(0, "Sparky The great");
         System.out.println(pets);
 
+        System.out.println(pets.get(1)); // returns Sting
+        System.out.println(pets.contains("Rafiki")); // returns true
+
+
+// Looping using forEach() method
+            
+            
+
     }
-    
 }
+    
