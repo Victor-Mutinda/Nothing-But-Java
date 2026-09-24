@@ -4,7 +4,7 @@ import java.util.ArrayList;
 // -----Ordered Lists----- Both Array and Linked Lists. They allow duplicates.
 
 // An ArrayList is a resizable array. Its size can grow or shrink dynamically unlike a normal array,
-// It can allow duplicates. Elements are stored in the order the were inserted.
+// It can allow duplicates. Maintains insertion order on the element.
 
 // ----When To Use ArrayLists-----
 // 1.) For most standard applications, especially when your program requires frequent lookups, index-based access and minimal removals from the middle of the list.

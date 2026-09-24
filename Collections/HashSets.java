@@ -3,7 +3,7 @@ package Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 
-// Hash Sets doesn't maintain specific order of elements.
+// Hash Sets doesn't maintain insertion order of elements.
 // Store unique elements - ignores duplicates. 
 
 public class HashSets {
@@ -16,6 +16,9 @@ public class HashSets {
         pets.add("Kamai");
         pets.add("Bob");
         pets.add("Santa");
+
+        // remove an element
+        pets.remove("Bob");
 //Iterating through the set using Iterator method
         System.out.println("Iterator method");
 

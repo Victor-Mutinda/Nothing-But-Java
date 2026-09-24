@@ -1,7 +1,7 @@
 package Collections;
 
 import java.util.LinkedList;
-// -----Ordered Lists----- Both Array and Linked Lists. They allow duplicates.
+// -----Ordered Lists----- Both Array and Linked Lists. They allow duplicates. Maintain insertion order.
 // ----When To Use LinkedLists-----
 //1) If application involves frequent data manipulation (additions and deletions) particularly at the beginning or end of the collection, or if you need to use the collection as a Queue/Deque.
 // 2) Implementing queues(FIFO - add elements via tail and Remove elements via head) and deques(Double Ended Queues- FIFO & LIFO) - optimized to add/remove elements from the ends.
@@ -19,6 +19,9 @@ public class LinkedLists {
 
         pets.add("Sparky");
         pets.add("Sting");
+        pets.add("Coco");
+
+        pets.remove(2);
 
         System.out.println("The Linked List is as follows : " + "\n" + pets);
 
