@@ -14,6 +14,5 @@ public class BankCard extends Payment {
     void pay(int amount){
         System.out.println("Enter your card details " + cardNumber + "\n" + amount + " will be deducted from your account via bank card");
     }
-
     
 }

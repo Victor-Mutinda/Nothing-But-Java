@@ -42,11 +42,12 @@ public class BankAccount {
      //   this.accountBalance =  accountBalance ;
     //}
 
-    // public setter exposes privaate accountBalance attribute to other external classes.
+    // public setter exposes private accountBalance attribute to other external classes.
     //Therefore using a protected method to control access to that private attribute to  the child classs and the classes in the same package
     protected void updateAccountBalance(double accountBal){
         this.accountBalance = accountBal;
     }
+    
     public double withdraw(double withdrawnAmount){
 
         if (accountBalance >= withdrawnAmount) {
