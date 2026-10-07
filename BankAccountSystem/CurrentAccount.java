@@ -6,8 +6,8 @@ public class CurrentAccount extends BankAccount {
 
 
     public CurrentAccount(int accountNo, String accountName, double accountBalance,double overdraftLimit){
-        // Creating a CurrentAccount, You need to have a minimum account Balance of 500 kshs.
-        // Constructor chaining - reusing intiliazation logic and reduce code duplication. Inheriting the parent Constructor attributes using super.
+// Creating a CurrentAccount, You need to have a minimum account Balance of 500 kshs.
+// Constructor chaining - reusing intiliazation logic and reduce code duplication. Inheriting the parent Constructor attributes using super.
         super(accountNo, accountName, accountBalance);  
         this.overdraftLimit = overdraftLimit;
     }
@@ -15,7 +15,7 @@ public class CurrentAccount extends BankAccount {
 // Method overriding. The withdraw method gets to have another different behaviour from the original behaviour in the parent class.
     @Override 
     public double withdraw(double withdrawnAmount){
-       // overdraftLimit = super.getAccountBalance() * 0.2; // Will get back to calculating overdraft limit later. For now lets initialize the limit through a constructor.
+// overdraftLimit = super.getAccountBalance() * 0.2; // Will get back to calculating overdraft limit later. For now lets initialize the limit through a constructor.
         
         if (withdrawnAmount <= super.getAccountBalance()){
 
@@ -37,7 +37,5 @@ public class CurrentAccount extends BankAccount {
        return super.getAccountBalance();
 
     }
-    
-
 
 }

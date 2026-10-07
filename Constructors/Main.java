@@ -8,13 +8,14 @@ public class Main {
         Employee employee3 = new Employee(3,"Annette Munyiva","Mass Communication",120000);
 
         Employee employee4 = new Employee(4,"Cj Rafiki","Security");
+// By default, salary will be initialized to 0, but you can initialize it to desired salary when creating an object.
         
     
-        employee1.displayInfo();
-        employee2.displayInfo();
-        employee3.displayInfo();
+       employee1.displayInfo();
+       employee2.displayInfo();
+       employee3.displayInfo();
 
-        employee4.displayInfo();
+       employee4.displayInfo();
 
 
     

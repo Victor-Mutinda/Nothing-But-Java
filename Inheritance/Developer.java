@@ -2,7 +2,7 @@ package Inheritance;
 
 public class Developer extends Employee {
     
-    private String programmingLanguage;
+    private String programmingLanguage; // Instant variable to reference the Developer objects.
 
     public Developer(int id, String name, int salary, String programmingLanguage){
         super(id,name,salary);
