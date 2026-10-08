@@ -25,6 +25,30 @@ public class PriorityQueues {
 // Final Queue
         System.out.println(pets);
 
+// Removing an element from the queue
+        pets.remove("Lola");
+        pets.add("Alpha");
+
+// Looping through the queue using enhanced for loop
+        System.out.println("Looping through use of enhanced for loop");
+        for(String pet:pets){
+                System.out.println(pet);
+        }
+// Loop using forEach() method
+        System.out.println("Looping through use of enhanced for loop");
+        pets.forEach((pet) -> {
+                System.out.println(pet);
+        });
+// Loop using iterator method
+        System.out.println("Looping through Iterator method");
+// var is a reserved keyword. Automatically infers iterate is of type Iterator<String> based on the return type of the iterator() method.
+// You can use this instead of Iterator<String> iterate = pets.iterator();
+        var iterate = pets.iterator();
+        while(iterate.hasNext()){
+                System.out.println(iterate.next());
+        }
+
+
 
       
     }
