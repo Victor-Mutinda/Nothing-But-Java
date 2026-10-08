@@ -10,7 +10,7 @@ import java.util.ArrayList;
 // 1.) For most standard applications, especially when your program requires frequent lookups, index-based access and minimal removals from the middle of the list.
 
 public class ArayList {
-    public static void main(String[] args){
+    public static void main (String[] args){
 // Creating an Array List
         ArrayList<String> pets = new ArrayList<>();
 // Add items in a list.
@@ -48,9 +48,16 @@ public class ArayList {
 
 
 // Looping using forEach() method
-            
-            
+        System.out.println("Loop using forEach() method");
+        pets.forEach((pet) -> {
+                System.out.println(pet);
 
+        });
+// Looping using enhanced for loop
+        System.out.println("Loop using enhanced for loop");
+        for(String pet:pets){
+                System.out.println(pet);
+        }
     }
 }
     

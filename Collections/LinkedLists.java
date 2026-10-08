@@ -22,14 +22,23 @@ public class LinkedLists {
         pets.add("Coco");
 
         pets.remove(2);
+        pets.remove("Sparky");
 
         System.out.println("The Linked List is as follows : " + "\n" + pets);
 
-        // Iterating through the linkedlist can be done using for loop or forEach method
-        for(String str:pets){
+        System.out.println(pets.set(0,"Sparky the G"));
 
+// Iterating through the linkedlist can be done using enhanced for loop  method
+        System.out.println("Looping using enhanced for loop.");
+
+        for(String str:pets){
         System.out.println(str);
         }
+// Looping using forEach() method
+        System.out.println("Looping using forEach() method");
+        pets.forEach((pet) -> {
+            System.out.println(pet);
+        });
 
 
 

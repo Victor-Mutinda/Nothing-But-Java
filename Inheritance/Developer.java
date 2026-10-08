@@ -16,7 +16,7 @@ public class Developer extends Employee {
     }
 
     @Override
-    public double calculateBonus(){
+    public double calculateBonus(){  
         double initialBonus = super.calculateBonus();
 
         double extraHours = 0.2 * this.salary;
