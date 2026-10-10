@@ -37,7 +37,10 @@ public class HashMaps {
             System.out.println("employeeID : " + itr.getKey() + " Name : " + itr.getValue());
 
         }
+        employees.get(1).toString() ;
+        System.out.println(employees.keySet() + " " + employees.values()); // returns all keys and values in the HashMap
 
+        System.out.println(employees.get(1).toString());
     }
     
 }

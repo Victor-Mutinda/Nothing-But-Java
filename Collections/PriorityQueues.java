@@ -1,6 +1,5 @@
 package Collections;
 
-import java.util.Queue;
 import java.util.PriorityQueue;
 // Priority queue is a queue(FIFO) where elements are ordered based on the priority. Not based on insertion order.
 // By default, it uses natural ordering (min-heap), but a custom comparator can be used to define different priorities.
@@ -29,11 +28,14 @@ public class PriorityQueues {
         pets.remove("Lola");
         pets.add("Alpha");
 
+// When Using Iterator and for loops, There's no guarantee that the elements will be
+// traversed in the order of priority. Using peek()/poll() is the ONLY SURE BET.
+
 // Looping through the queue using enhanced for loop
         System.out.println("Looping through use of enhanced for loop");
         for(String pet:pets){
                 System.out.println(pet);
-        }
+        }        
 // Loop using forEach() method
         System.out.println("Looping through use of enhanced for loop");
         pets.forEach((pet) -> {
@@ -47,6 +49,15 @@ public class PriorityQueues {
         while(iterate.hasNext()){
                 System.out.println(iterate.next());
         }
+// Looping using poll(), your queue will be emptied. So to loop through without emptying the queue
+// we clone the original queue and use the cloned to analyze the elements
+        PriorityQueue<String> clonedPets = new PriorityQueue<>(pets);
+
+        System.out.println("Loop using poll() method");
+        while(!clonedPets.isEmpty()){
+                System.out.println("Element: " + clonedPets.poll());
+        }
+
 
 
 
